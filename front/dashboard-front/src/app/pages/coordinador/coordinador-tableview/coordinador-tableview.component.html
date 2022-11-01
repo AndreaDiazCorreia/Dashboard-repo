@@ -1,0 +1,17 @@
+<mat-card>
+<mat-list>
+  <div mat-subheader>
+    Tabla Coordinador
+  </div>
+  <mat-list-item *ngFor = "let t of tables ">
+    <mat-icon mat-list-icon>Tabla</mat-icon>
+    <div mat-line>{{ t.title }}</div>
+    <div mat-line>{{ t.value1}}</div>
+    <div mat-line>{{ t.value2 }}</div>
+    <div mat-line>{{ t.value3 }}</div>
+    <div mat-line>{{ t.value4 }}</div>
+    <mat-divider></mat-divider>
+  </mat-list-item>
+</mat-list>
+
+</mat-card>

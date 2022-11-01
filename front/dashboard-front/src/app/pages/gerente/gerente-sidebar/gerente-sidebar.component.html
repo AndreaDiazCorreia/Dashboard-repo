@@ -1,0 +1,18 @@
+<mat-card class="sidebar">
+  <mat-action-list>
+    <div mat-subheader>Menu</div>
+    <button routerLink = "/gerente" mat-list-item>
+      <mat-icon mat-list-icon>home</mat-icon> Inicio
+    </button>
+    <button mat-list-item routerLink = "/gerente/profile">
+      <mat-icon mat-list-icon>account_circle</mat-icon>Perfil
+    </button>
+    <button mat-list-item routerLink = "/gerente/gerente-table">
+      <mat-icon mat-list-icon>list</mat-icon>Table
+    </button>
+
+    <button mat-list-item (click) = "logout()">
+      <mat-icon mat-list-icon>logout</mat-icon>Salir
+    </button>
+  </mat-action-list>
+</mat-card>

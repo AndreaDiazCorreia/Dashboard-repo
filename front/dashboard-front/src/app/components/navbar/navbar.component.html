@@ -1,0 +1,43 @@
+<mat-toolbar color="secondary">
+  <a
+  [routerLink]="'/'"
+  mat-icon-button
+  class="example-icon"
+  arial-label="Example icon-button with menu icon"
+>
+  <img src="../../../assets/kisspng-accenture-symbol-logo-management-consulting-high-intelligence-5ae346bf8c1cd6.4605870015248442235739.png" alt="Logo acccenture" id="logo">
+
+
+  </a>
+  <span>Dashboard</span>
+  <span class="example-spacer"></span>
+  <a
+    *ngIf = "!isLoggedIn"
+    [routerLink]="'/login'"
+    mat-icon-button
+    class = "example-icon favorite-icon"
+    aria-label = "Example icon-button with heart icon"
+  >
+    Log in
+  </a>
+  <a
+    *ngIf = "!isLoggedIn"
+    [routerLink]="'/signup'"
+    mat-icon-button
+    class="example-icon favorite-icon mr20 ml70"
+    aria-label="Example icon-button with heart icon"
+  >
+    Register
+  </a>
+  <a
+    *ngIf = "isLoggedIn"
+    (click) = "logout()"
+    style="margin-right: 50px"
+    mat-icon-button
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+  >
+    Log out
+  </a>
+
+</mat-toolbar>
